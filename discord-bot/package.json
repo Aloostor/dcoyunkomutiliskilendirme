@@ -1,0 +1,23 @@
+{
+  "name": "mta-discord-commands",
+  "version": "1.0.0",
+  "description": "MTA SA Discord Komut Sistemi",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "dev": "nodemon bot.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "express": "^4.18.2",
+    "axios": "^1.6.2",
+    "sqlite3": "^5.1.6",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "keywords": ["mta", "discord", "commands", "gaming"],
+  "author": "Geoofy",
+  "license": "MIT"
+}

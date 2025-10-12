@@ -1,0 +1,19 @@
+<meta>
+    <info author="Geoofy" type="script" name="Discord Commands System" version="1.0" description="MTA SA Discord Komut İlişkilendirme Sistemi" />
+    
+    <!-- Server-side scripts -->
+    <script src="server.lua" type="server" />
+    <script src="http-handler.lua" type="server" />
+    
+    <!-- Configuration files -->
+    <file src="config/mta-config.lua" />
+    
+    <!-- Database files -->
+    <file src="database/schema.sql" />
+    
+
+    <include resource="http" />
+    <export function="handleDiscordCommand" type="server" />
+    <export function="getPlayerByDiscordID" type="server" />
+    <export function="logCommand" type="server" />
+</meta>
