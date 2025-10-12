@@ -19,7 +19,7 @@ Bu sistem, MTA San Andreas sunucunuz ile Discord bot arasında komut ilişkilend
 ## 📋 Gereksinimler
 
 ### MTA SA Sunucu
-- MTA SA Server 1.5.8+
+- MTA SA Server 1.6+
 - SQLite desteği
 - HTTP modülü
 
@@ -181,19 +181,11 @@ Sistem şu bilgileri loglar:
 
 Sorunlarınız için:
 - GitHub Issues açın
-- Discord: Geoofy#1234
-- Email: support@geoofy.com
+- Discord: moodyalostor
 
 ## 📄 Lisans
 
 Bu proje MIT lisansı altında lisanslanmıştır.
-
-## 💰 Fiyatlandırma
-
-- **Mevcut komutlar**: Dahil
-- **Ekstra komut**: 200 TL/komut
-- **Özel geliştirme**: Üzerine pazarlık
-
 ---
 
 **Not**: Bu sistem geliştirme amaçlıdır. Üretim ortamında kullanmadan önce güvenlik testlerini yapın.
