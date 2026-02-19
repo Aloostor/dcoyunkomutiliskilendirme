@@ -181,7 +181,7 @@ Sistem şu bilgileri loglar:
 
 Sorunlarınız için:
 - GitHub Issues açın
-- Discord: moodyalostor
+- Discord: aloostor
 
 ## 📄 Lisans
 
