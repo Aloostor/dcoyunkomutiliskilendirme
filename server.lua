@@ -57,6 +57,9 @@ function handleDiscordCommand(discordID, command, params)
     elseif command == "hapiscikar" then
         success, response = handleHapisCikarCommand(discordID, params)
         
+    elseif command == "duyuru" then
+        success, response = handleDuyuruCommand(discordID, params)
+        
     else
         response = "Bilinmeyen komut: " .. command
     end
@@ -294,6 +297,26 @@ function handleHapisCikarCommand(discordID, params)
     local response = "Oyuncu " .. getPlayerName(targetPlayer) .. " hapisten çıkarıldı"
     outputChatBox("Admin " .. getPlayerName(player) .. " tarafından hapisten çıkarıldınız", targetPlayer, 0, 255, 0)
     
+    return true, response
+end
+
+-- Duyuru komut handler
+function handleDuyuruCommand(discordID, params)
+    local player = getPlayerByDiscordID(discordID)
+    if not player then
+        return false, "Oyuncu bulunamadı"
+    end
+    
+    local message = table.concat(params, " ")
+    if #message < 1 then
+        return false, "Kullanım: !duyuru [mesaj]"
+    end
+    
+    -- Duyuruyu tüm oyunculara gönder
+    outputChatBox("#FF0000[DUYURU] #FFFFFF" .. message, root, 255, 255, 255, true)
+    
+    -- Ayrıca ekranın ortasında göster (dxDrawText gerektirebilir, standart outputChatBox yeterli)
+    local response = "Duyuru başarıyla gönderildi"
     return true, response
 end
 

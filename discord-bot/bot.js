@@ -63,7 +63,8 @@ const COMMAND_PERMISSIONS = {
     'zamanayarla': ['admin'],
     'status': ['user'],
     'paraver': ['user'],
-    'hapiscikar': ['admin']
+    'hapiscikar': ['admin'],
+    'duyuru': ['admin']
 };
 
 // Bot ready event

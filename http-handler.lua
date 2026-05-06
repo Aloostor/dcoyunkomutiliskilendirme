@@ -117,6 +117,9 @@ function handleDiscordCommand(discordID, command, params)
     elseif command == "hapiscikar" then
         success, response = handleHapisCikarCommand(discordID, params)
         
+    elseif command == "duyuru" then
+        success, response = handleDuyuruCommand(discordID, params)
+        
     else
         response = "Bilinmeyen komut: " .. command
     end
